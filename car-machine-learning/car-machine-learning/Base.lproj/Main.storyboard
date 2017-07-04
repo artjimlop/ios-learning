@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gba-a9-qBB">
+                                <rect key="frame" x="16" y="20" width="288" height="363.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gba-a9-qBB" secondAttribute="height" multiplier="343:433" id="jql-iO-nMt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQS-7d-lFf">
+                                <rect key="frame" x="16" y="505" width="288" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="XBU-MM-qHM" kind="show" identifier="showCellCar" id="TA4-IV-47l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is a COREML test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kzc-gc-y1c">
+                                <rect key="frame" x="16" y="451.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gba-a9-qBB" secondAttribute="trailing" id="3C2-Io-l52"/>
+                            <constraint firstItem="Kzc-gc-y1c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="3FK-aJ-Wpc"/>
+                            <constraint firstItem="gba-a9-qBB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ur-PV-eEG"/>
+                            <constraint firstItem="SQS-7d-lFf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Of7-ZI-87S"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="SQS-7d-lFf" secondAttribute="bottom" constant="27" id="Tnn-Fw-YOC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Kzc-gc-y1c" secondAttribute="bottom" constant="96" id="WGh-JR-sO7"/>
+                            <constraint firstAttribute="trailing" secondItem="SQS-7d-lFf" secondAttribute="trailing" constant="16" id="Z1T-qM-X1k"/>
+                            <constraint firstItem="SQS-7d-lFf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="a7t-HD-Srr"/>
+                            <constraint firstItem="gba-a9-qBB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="enX-Ca-LEL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gba-a9-qBB" secondAttribute="leading" id="f3u-cS-dMl"/>
+                            <constraint firstAttribute="trailing" secondItem="Kzc-gc-y1c" secondAttribute="trailing" constant="16" id="qNG-NM-22X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="136"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vV6-D8-14h">
+            <objects>
+                <viewController id="XBU-MM-qHM" customClass="ViewController" customModule="car_machine_learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IEh-JX-BS3"/>
+                        <viewControllerLayoutGuide type="bottom" id="9R8-0w-JjP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qbu-on-AkB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Yz-fk-O40">
+                                <rect key="frame" x="16" y="36" width="288" height="315.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ct-Ft-GeA">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pdu-ds-1d4">
+                                        <rect key="frame" x="0.0" y="28.5" width="288" height="29"/>
+                                        <segments>
+                                            <segment title="207"/>
+                                            <segment title="307"/>
+                                            <segment title="407"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue" destination="XBU-MM-qHM" eventType="valueChanged" id="o39-9Z-esw"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FM6-Kb-O8T">
+                                        <rect key="frame" x="0.0" y="64.5" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0h-Xn-U9H">
+                                        <rect key="frame" x="0.0" y="93" width="290" height="31"/>
+                                        <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="calculateValue" destination="XBU-MM-qHM" eventType="valueChanged" id="Ek1-ue-3vu"/>
+                                            <action selector="changeExtras:" destination="XBU-MM-qHM" eventType="valueChanged" id="a1H-NO-GTz"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KMs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-BF-E93">
+                                        <rect key="frame" x="0.0" y="132" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" minValue="0.0" maxValue="200000" translatesAutoresizingMaskIntoConstraints="NO" id="e2g-Ey-Mhq">
+                                        <rect key="frame" x="-2" y="160.5" width="292" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="calculateValue" destination="XBU-MM-qHM" eventType="valueChanged" id="jeC-pn-Ez4"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEs-nc-VfB">
+                                        <rect key="frame" x="0.0" y="198.5" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6c4-qe-brl">
+                                        <rect key="frame" x="0.0" y="227" width="288" height="29"/>
+                                        <segments>
+                                            <segment title="Bad"/>
+                                            <segment title="Good"/>
+                                            <segment title="Very Good"/>
+                                            <segment title="Perfect"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue" destination="XBU-MM-qHM" eventType="valueChanged" id="nYT-hc-eVc"/>
+                                            <action selector="changeStatus:" destination="XBU-MM-qHM" eventType="valueChanged" id="8kJ-Wk-rHg"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selling price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4Y-Of-GcP">
+                                        <rect key="frame" x="0.0" y="263" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99.999€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1n3-Pa-DDr">
+                                        <rect key="frame" x="0.0" y="291.5" width="288" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9Yz-fk-O40" secondAttribute="trailing" constant="16" id="414-Gl-cVQ"/>
+                            <constraint firstItem="9Yz-fk-O40" firstAttribute="leading" secondItem="qbu-on-AkB" secondAttribute="leading" constant="16" id="Pa9-pR-zbF"/>
+                            <constraint firstItem="9Yz-fk-O40" firstAttribute="top" secondItem="qbu-on-AkB" secondAttribute="topMargin" constant="36" id="v3J-uj-nQi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="extrasSwitch" destination="Q0h-Xn-U9H" id="p89-Rf-Yf1"/>
+                        <outlet property="kmsLable" destination="I8i-BF-E93" id="Fz3-gv-tWe"/>
+                        <outlet property="kmsSlider" destination="e2g-Ey-Mhq" id="WOa-DV-aGe"/>
+                        <outlet property="modelSegmentedControl" destination="Pdu-ds-1d4" id="4BS-0g-WaA"/>
+                        <outlet property="priceLabel" destination="1n3-Pa-DDr" id="gkb-Bx-XE4"/>
+                        <outlet property="stackView" destination="9Yz-fk-O40" id="c4g-lw-JpU"/>
+                        <outlet property="statusSegmentedControl" destination="6c4-qe-brl" id="xAe-ZN-icV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMe-4R-nMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="348" height="433"/>
+    </resources>
+</document>

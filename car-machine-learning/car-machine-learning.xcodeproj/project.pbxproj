@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6902E6981F0CE00400F4F777 /* Cars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6902E6971F0CDFFF00F4F777 /* Cars.mlmodel */; };
 		6997FB031F0A7FE400E81200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997FB021F0A7FE400E81200 /* AppDelegate.swift */; };
 		6997FB051F0A7FE400E81200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997FB041F0A7FE400E81200 /* ViewController.swift */; };
 		6997FB081F0A7FE400E81200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6997FB061F0A7FE400E81200 /* Main.storyboard */; };
 		6997FB0A1F0A7FE400E81200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6997FB091F0A7FE400E81200 /* Assets.xcassets */; };
 		6997FB0D1F0A7FE400E81200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6997FB0B1F0A7FE400E81200 /* LaunchScreen.storyboard */; };
-		6997FB161F0BB54E00E81200 /* Cars.mlmodel in Resources */ = {isa = PBXBuildFile; fileRef = 6997FB151F0BB54E00E81200 /* Cars.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6902E6971F0CDFFF00F4F777 /* Cars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Cars.mlmodel; sourceTree = SOURCE_ROOT; };
 		6997FAFF1F0A7FE400E81200 /* car-machine-learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "car-machine-learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6997FB021F0A7FE400E81200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6997FB041F0A7FE400E81200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		6997FB091F0A7FE400E81200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6997FB0C1F0A7FE400E81200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6997FB0E1F0A7FE400E81200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6997FB151F0BB54E00E81200 /* Cars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cars.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		6997FB011F0A7FE400E81200 /* car-machine-learning */ = {
 			isa = PBXGroup;
 			children = (
-				6997FB151F0BB54E00E81200 /* Cars.mlmodel */,
+				6902E6971F0CDFFF00F4F777 /* Cars.mlmodel */,
 				6997FB021F0A7FE400E81200 /* AppDelegate.swift */,
 				6997FB041F0A7FE400E81200 /* ViewController.swift */,
 				6997FB061F0A7FE400E81200 /* Main.storyboard */,
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					6997FAFE1F0A7FE400E81200 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,7 +128,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6997FB0D1F0A7FE400E81200 /* LaunchScreen.storyboard in Resources */,
-				6997FB161F0BB54E00E81200 /* Cars.mlmodel in Resources */,
 				6997FB0A1F0A7FE400E81200 /* Assets.xcassets in Resources */,
 				6997FB081F0A7FE400E81200 /* Main.storyboard in Resources */,
 			);
@@ -142,6 +142,7 @@
 			files = (
 				6997FB051F0A7FE400E81200 /* ViewController.swift in Sources */,
 				6997FB031F0A7FE400E81200 /* AppDelegate.swift in Sources */,
+				6902E6981F0CE00400F4F777 /* Cars.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +266,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "car-machine-learning/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kenzoku.car-machine-learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -277,10 +280,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "car-machine-learning/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kenzoku.car-machine-learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -303,6 +308,7 @@
 				6997FB131F0A7FE400E81200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
